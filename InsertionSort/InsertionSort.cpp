@@ -1,6 +1,9 @@
 #include <iostream>
 using namespace std;
 
+int arr[9];
+int n;
+
 void input() {
 	while (true) {
 		cout << "Masukkan banyaknya elemen pada array : ";
@@ -23,8 +26,7 @@ void input() {
 }
 
 void InsertionSort() {
-    int i, n, temp, j;
-    int arr[9];
+    int i, temp, j;
 
     for (i = 1; i <= n - 1; i++) {
         
@@ -57,6 +59,7 @@ void display() {
 	cout << endl;
 	cout << "Jumlah pass = " << n - 1 << endl;
 	cout << endl;
+}
 
 int main()
 {
